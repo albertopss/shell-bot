@@ -1,0 +1,12 @@
+[Unit]
+Description=Telgram bot messenger
+After=network.target
+
+[Service]
+WorkingDirectory=~/shell-bot
+ExecStart=~/shell-bot/telegram_bot.py
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
